@@ -1,0 +1,137 @@
+body {
+  font-family: "Jost", sans-serif;
+  background-color: rgba(243, 243, 243, 0.966);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(248, 220, 220, 0.842);
+}
+
+.container {
+  max-width: 1280px;
+  border-radius: 5px;
+  margin: 1rem auto;
+  box-shadow: 0px 6px 9px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 6px 9px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 9px -3px rgba(0, 0, 0, 0.75);
+}
+
+.logo-heading {
+  padding: 10px;
+  margin: 1rem 1rem 1rem 2rem;
+  display: inline-block;
+  font-size: 2.5em;
+  font-weight: normal;
+  color: rgb(45, 14, 104);
+}
+
+.search-input {
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  margin: 1rem 0;
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: normal;
+  background-color: rgb(238, 238, 238);
+  color: rgb(45, 14, 104);
+}
+
+.search-button {
+  padding: 5px;
+  margin: 0.5rem 2rem 0.5rem 0;
+  border: none;
+  height: 30px;
+  width: 30px;
+  background-color: rgba(248, 220, 220, 0.842);
+  background-image: url("https://img.icons8.com/ios-glyphs/30/000000/search--v1.png");
+}
+
+.hero {
+  display: flex;
+  background: rgba(248, 220, 220, 0.842);
+}
+
+.hero-desc {
+  margin: 1rem;
+  padding: 10px;
+  /* background: #f4ede3; */
+  max-height: 600px;
+}
+
+.hero-text {
+  color: rgb(45, 14, 104);
+  font-size: 1.8rem;
+  padding: 10px;
+}
+
+.result-pretext {
+  /* display: inline-block; */
+  margin: 0;
+  text-align: center;
+  color: rgb(45, 14, 104);
+  font-size: 1.8rem;
+  padding: 10px;
+  font-weight: normal;
+  background-color: rgba(248, 220, 220, 0.842);
+}
+
+.footer {
+  display: none;
+  background-color: rgba(248, 220, 220, 0.842);
+}
+
+.footer p {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  color: rgb(45, 14, 104);
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+.error-msg {
+  background-color: rgba(248, 220, 220, 0.842);
+  color: rgb(129, 11, 109);
+  border-radius: 5px;
+  font-weight: normal;
+  text-align: center;
+  padding: 10px;
+}
+
+.result-container {
+  background-color: rgba(248, 220, 220, 0.842);
+}
+
+.para {
+  text-align: center;
+}
+
+.poem {
+  font-weight: normal;
+  font-size: 1.2rem;
+  text-align: justify;
+  /* word-spacing: 0px; */
+  /* text-align */
+  margin: 1rem;
+  padding: 10px;
+  color: rgb(45, 14, 104);
+}
+
+@media (max-width: 610px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .search-input {
+    margin: 1rem;
+    width: 70%;
+  }
+}
