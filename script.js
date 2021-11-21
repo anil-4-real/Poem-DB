@@ -22,8 +22,8 @@ inputBtn.addEventListener("click", () => {
   getPoem().then((data) => {
     resultContainer.innerHTML = "";
     try {
-      data.forEach((index) => {
-        let poemElement = `<h2 class="para">Para</h2>
+      data.forEach((index, i) => {
+        let poemElement = `<h2 class="para">Para ${i+1}</h2>
         <p class="poem">${index.lines}</p>`;
 
         resultContainer.innerHTML += poemElement;
