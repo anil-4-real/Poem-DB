@@ -30,7 +30,7 @@ inputBtn.addEventListener("click", () => {
         document.querySelector("#footer").style.display = "block";
       });
     } catch (err) {
-      resultContainer.innerHTML = `<h2 class="error-msg">the poem you searched does not exist in our Databse :(</h2>`;
+      resultContainer.innerHTML = `<h2 class="error-msg">the poem you searched does not exist in our Database :(</h2>`;
       console.log(err);
     }
   });
